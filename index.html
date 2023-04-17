@@ -1,0 +1,56 @@
+ 
+<html>
+    <head>
+      <title>Gesture WebApp</title>
+     <script src="https://teachablemachine.withgoogle.com/models/qji_UiRXP/model.json"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  <h3 class="btn btn-warning heading">Gesture Web app
+
+  </h3>
+        
+  
+        <p style="font-size: 22px;">Take a selfie of a gesture to know about its meaning
+            <br>
+            <p>On the following gestures the model is trained -</p>
+            
+  <span>&#128076;</span>
+  <span>&#128077;</span>
+  <span>&#9996;</span>
+ 
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Prediction - </label>
+  <div id="prediction"></div>
+          <br><br>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam View - </label>
+    <div id="camera"></div>
+            <br><br>
+    <button onclick="takesnapshot();" class="btn btn-primary">Capture Image</button>
+          </div>
+ 
+  <span class="col-md-4 col-sm-12 col-xs-12">
+    <label>SnapShot - </label>
+  <span id="snapshot"></span>
+    <br><br>
+  <button onclick="check();" class="btn btn-warning">Predict Emotion</button>
+  </span>
+      </center>
+  
+    </span>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
